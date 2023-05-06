@@ -1,0 +1,20 @@
+from turtle import textinput, numinput, Pen, Screen
+
+tela = Screen()
+tela.title('cadastros de dados')
+
+nome = textinput(
+    title='Entrada de dados',
+    prompt="Qual é seu nome?"
+    )
+
+idade = numinput(
+    title='Entrada de dados',
+    prompt='Qaual é sua idada?',
+    minval=15,
+    maxval=120
+
+)
+
+caneta = Pen()
+caneta.write(f'Olá, {nome}! Idade: {idade} anos. Bem Vindo!')
