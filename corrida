@@ -1,0 +1,26 @@
+import turtle
+
+tela = turtle.Screen()
+tela.title('corrida de tartarugas ninjas')
+tela.bgcolor('black')
+
+rafa = turtle.Pen(shape='turtle')
+mica = turtle.Pen(shape='turtle')
+dona = turtle.Pen(shape='turtle')
+leo = turtle.Pen(shape='turtle')
+
+rafa.color('red')
+mica.color('blue')
+dona.color('green')
+leo.color('yellow')
+
+mica.left(90)
+dona.right(90)
+leo.right(180)
+
+for tartaruga in [rafa, mica, dona, leo]:
+    tartaruga.up()
+    tartaruga.forward(100)
+                         
+
+turtle.exitonclick()
